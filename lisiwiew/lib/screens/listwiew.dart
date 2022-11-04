@@ -11,9 +11,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   List<ListTile> data = [];
-  List<String> user = [
-    ''
-  ];
+  List<String> user = [''];
   List<ListTile> list() {
     for (int i = 0; i < user.length; i++) {
       data.add(
@@ -29,10 +27,11 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Container(
-      child: ListView(
-        children: list(),
+      body: Container(
+        child: ListView(
+          children: list(),
+        ),
       ),
-    ));
+    );
   }
 }
